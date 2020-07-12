@@ -32,25 +32,14 @@ func isValidBST(node *Node) bool {
 }
 
 func main() {
-	/* Valid tree
-		5
-	  /   \
-	4       7
-	*/
+	// valid tree
 	node1 := Node{Val: 5}
 	node1.Left = &Node{Val: 4}
 	node1.Right = &Node{Val: 7}
 
 	fmt.Println(isValidBST(&node1))
 
-	/* Invalid tree
-
-		5
-	  /   \
-	4       7
-		  /	  \
-		2		9
-	*/
+	// invalid tree
 	node1.Right.Right = &Node{Val: 9}
 	node1.Right.Left = &Node{Val: 2}
 
