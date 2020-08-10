@@ -1,3 +1,4 @@
+// Check if provided user string could be handled by only provided alphabet symbols
 package main
 
 import (
